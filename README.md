@@ -1,6 +1,4 @@
-# ATM Console Application
-
-## Unit Tests & Documentation
+## ATM Console Application
 
 Lab: 02 - Unit Tests & Documentation
 
@@ -9,7 +7,7 @@ Lab: 02 - Unit Tests & Documentation
 ----
 
 ## Description
-This is a bank “ATM” program within a c# console application. The console application mocks the functionality of an ATM: view the current balance, withdraw money from the balance and deposit money to the current balance.
+This is a bank “ATM” program within a C# console application. The console application mocks the functionality of an ATM: view the current balance, withdraw money from the balance and deposit money to the current balance.
 The application has a user interface that prompts the user for these standard ATM operations and unit tests for the functionality. 
 
 ---
