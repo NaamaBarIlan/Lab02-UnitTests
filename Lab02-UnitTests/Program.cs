@@ -1,12 +1,20 @@
 ﻿using System;
 
+
 namespace Lab02_UnitTests
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+        }
+
+        public static string FizzBuzz(int number)
+        {
+            
+             return "3";
+            
         }
     }
 }
