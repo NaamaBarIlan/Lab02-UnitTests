@@ -16,6 +16,15 @@ namespace ATM_Unit_Tests
         }
 
         [Fact]
+        public void DoesViewBalanceReturnNegativeBalance()
+        {
+            decimal testBalance = -5;
+            Balance = testBalance;
+
+            Assert.Equal(0, ViewBalance());
+        }
+
+        [Fact]
         public void CanWithdrawAmountFromBalance()
         {   
             //Arrange
@@ -43,7 +52,7 @@ namespace ATM_Unit_Tests
         }
 
         [Fact]
-        public void IsAmountGreaterThanZero()
+        public void IsWithdrawAmountGreaterThanZero()
         {
             decimal testBalance = 500;
             Balance = testBalance;
@@ -53,24 +62,31 @@ namespace ATM_Unit_Tests
 
             Assert.Equal(500, value);
         }
-        /*
+        
         [Fact]
-        public void CanReturnFizzFor3()
+        public void CanDepositAmountToBalance()
         {
-            string fizz = FizzBuzz(3);
+            decimal testBalance = 500;
+            Balance = testBalance;
+            decimal testAmount = 100;
 
-            // assert
-            Assert.Equal("Fizz", fizz);
+            decimal value = Deposit(testAmount);
+
+            Assert.Equal(600, value);
         }
 
+        
         [Fact]
-        public void CanReturnFizzFor3()
+        public void IsDepositAmountGreaterThanZero()
         {
-            string fizz = FizzBuzz(3);
+            decimal testBalance = 500;
+            Balance = testBalance;
+            decimal testAmount = -100;
 
-            // assert
-            Assert.Equal("3", fizz);
+            decimal value = Deposit(testAmount);
+
+            Assert.Equal(500, value);
         }
-        */
+        
     }
 }
