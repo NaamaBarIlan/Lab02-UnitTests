@@ -5,7 +5,7 @@ namespace Lab02_UnitTests
 {
     public class Program
     {
-        public static decimal Balance = 0;
+        public static decimal Balance = 500;
 
         /// <summary>
         /// Calling the user interface method to activate the application
@@ -13,9 +13,7 @@ namespace Lab02_UnitTests
         /// <param name="args"></param>
         public static void Main(string[] args)
         {
-            //UserInterface();
-            Balance = 5.67M;
-            ViewBalance();
+            UserInterface();
         }
 
         /// <summary>
@@ -30,7 +28,7 @@ namespace Lab02_UnitTests
             }
             else
             {
-                //Console.WriteLine($"Your current balance is: {Balance}");
+                Console.WriteLine($"Your current balance is: {Balance}");
                 return Balance;
             }
 
@@ -82,14 +80,55 @@ namespace Lab02_UnitTests
         /// <summary>
         /// Prompts the user for standard ATM operations that links to each of the external methods. 
         /// </summary>
-        //public static void UserInterface(){}
-
-        //Testing the test
-        public static string FizzBuzz(int number)
+        public static void UserInterface()
         {
-
-            return "3";
-
+            bool displayMenu = true;
+            while (displayMenu)
+            {
+                displayMenu = OptionsMenu();
+            }
+            
         }
+
+        public static bool OptionsMenu()
+        {
+                Console.WriteLine("Please choose a transaction: ");
+                Console.WriteLine("1) View Balance");
+                Console.WriteLine("2) Withdraw");
+                Console.WriteLine("3) Deposit");
+                Console.WriteLine("4) Exit");
+
+            string result = Console.ReadLine();
+            if (result == "1")
+            {
+                ViewBalance();
+                return true;
+            }
+            else if (result == "2")
+            {
+                Console.WriteLine("Please enter the amount you wish to withdraw: ");
+                string userInput = Console.ReadLine();
+                decimal amount = Convert.ToDecimal(userInput);
+                Withdraw(amount);
+                return true;
+            }
+            else if (result == "3")
+            {
+                Console.WriteLine("Please enter the amount you with to deposit: ");
+                string userInput = Console.ReadLine();
+                decimal amount = Convert.ToDecimal(userInput);
+                Deposit(amount);
+                return true;
+            }
+            else if (result == "4")
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+
     }
 }
