@@ -28,7 +28,6 @@ namespace Lab02_UnitTests
             }
             else
             {
-                Console.WriteLine($"Your current balance is: {Balance}");
                 return Balance;
             }
 
@@ -101,7 +100,8 @@ namespace Lab02_UnitTests
             string result = Console.ReadLine();
             if (result == "1")
             {
-                ViewBalance();
+                decimal Balance = ViewBalance();
+                Console.WriteLine($"Your current balance is: {Balance}");
                 return true;
             }
             else if (result == "2")
