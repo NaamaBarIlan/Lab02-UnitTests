@@ -7,7 +7,7 @@ Lab: 02 - Unit Tests & Documentation
 ----
 
 ## Description
-This is a bank ìATMî program within a C# console application. The console application mocks the functionality of an ATM: view the current balance, withdraw money from the balance and deposit money to the current balance.
+This is a bank ‚ÄúATM‚Äù program within a C# console application. The console application mocks the functionality of an ATM: view the current balance, withdraw money from the balance and deposit money to the current balance.
 The application has a user interface that prompts the user for these standard ATM operations and unit tests for the functionality. 
 
 ---
@@ -37,7 +37,7 @@ Then select and open ```Lab02-UnitTests.sln```
 #### View Balance and Withdraw
 ![Image 2](img/lab02_view-balance-withdraw.png)
 #### View Balance and Deposit
-![Image 3](img\lab02-ViewBalance-deposit.png)
+![Image 3](img/lab02-ViewBalance-deposit.png)
 
 ---
 
