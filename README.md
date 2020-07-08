@@ -31,17 +31,15 @@ Then select and open ```Lab02-UnitTests.sln```
 ---
 
 ### Visuals
-***[TBA screenshots of the application in action]***
 
 #### Application Start
-![Image 1](https://via.placeholder.com/750x500)
-#### Using the Application
-![Image 1](https://via.placeholder.com/750x500)
-#### Application End
-![Image 1](https://via.placeholder.com/750x500)
+![Image 1](img/lab02-start.png)
+#### View Balance and Withdraw
+![Image 2](img/lab02_view-balance-withdraw.png)
+#### View Balance and Deposit
+![Image 3](img\lab02-ViewBalance-deposit.png)
 
 ---
 
 ### Change Log
-***[The change log will list any changes made to the code base. This includes any changes from TA/Instructor feedback]***  
  
